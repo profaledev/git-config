@@ -1,19 +1,13 @@
-Aqui está um guia completo e detalhado em formato Markdown (`.md`). Você pode copiar esse código e colar diretamente em um arquivo (por exemplo, `GUIA-GIT.md`) no seu repositório ou postar na plataforma que utiliza com seus alunos da Etec.
-
-Ele foi pensado para ser lido de forma fácil por quem está começando, usando os repositórios reais da nossa disciplina como exemplo prático.
-
----
-
-```markdown
 # 🚀 Guia Definitivo: Git, GitHub e o Fluxo das Nossas Aulas
 
-Olá, turma! Tudo bem?
+Olá, turma da Etec! Tudo bem?
 
-Para que possamos organizar nossos projetos de Sistemas Web, HTML, CSS e JavaScript, vamos utilizar o **Git** e o **GitHub**. Este guia vai ensinar desde a instalação até como vocês devem entregar as atividades (o famoso fluxo de *Fork* e *Upstream*).
+Para que possamos organizar nossos projetos de Sistemas Web, HTML, CSS e JavaScript, vamos utilizar o **Git** e o **GitHub**. Este guia vai ensinar desde a instalação até a rotina correta para vocês entregarem as atividades sem dor de cabeça (o famoso fluxo de *Fork* e *Upstream*).
 
 ---
 
 ## 🛠️ Parte 1: O que são Git e GitHub?
+
 * **Git:** É o programa que roda no seu computador e gerencia as versões do seu código. Ele é como uma "máquina do tempo" para os seus arquivos.
 * **GitHub:** É um site (uma rede social para desenvolvedores) onde guardamos nossos repositórios do Git na nuvem.
 
@@ -39,7 +33,7 @@ git config --global user.email "seu-email-do-github@exemplo.com"
 
 ---
 
-## 💻 Parte 3: O Fluxo da Nossa Disciplina (Como fazer as atividades)
+## 💻 Parte 3: O Fluxo da Nossa Disciplina (Configuração Inicial)
 
 Para as nossas aulas, vocês não vão modificar o meu repositório diretamente. Vocês vão criar uma **cópia pessoal (Fork)** do meu repositório, fazer as atividades lá e, quando eu postar uma lista nova, vocês vão "puxar" essa atualização para o computador de vocês.
 
@@ -80,54 +74,61 @@ Para conferir se deu tudo certo, digite `git remote -v`. O resultado deve mostra
 
 ---
 
-## 🔄 Parte 4: O Dia a Dia do Aluno (Rotina)
+## 🔄 Parte 4: O Dia a Dia do Aluno (A Rotina de Sobrevivência)
 
-Sempre que formos programar na aula ou em casa, vocês usarão este ciclo:
+**⚠️ REGRA DE OURO: Nunca comece a programar sem antes atualizar a sua máquina local!**
+Como vocês programam nos computadores do laboratório e também em casa, é muito comum esquecer que a máquina atual está desatualizada. Se você alterar o código numa máquina antiga, o Git vai travar na hora de enviar.
 
-### 1. Quando o professor avisar que tem matéria/lista nova:
+Siga sempre este roteiro passo a passo ao sentar no computador:
 
-Você precisa "puxar" as atualizações do meu repositório (`upstream`) para o seu computador:
+### 1. ANTES de escrever qualquer código (Atualize tudo!)
+
+Abra o terminal na pasta do projeto e rode esses dois comandos para garantir que você tem a versão mais recente do seu próprio código e os exercícios novos do professor:
 
 ```bash
+# 1º - Puxa as suas próprias atualizações (caso tenha programado em outro PC antes)
+git pull origin main
+
+# 2º - Puxa as listas e conteúdos novos do repositório do professor
 git pull upstream main
 
 ```
 
-*(Isso vai baixar os novos enunciados e arquivos base que eu preparei).*
+*(Nota: Se durante o pull o Git abrir uma tela de texto estranha pedindo para confirmar um "Merge", basta digitar `:wq` e apertar `Enter` para sair e salvar).*
 
-### 2. Enquanto você estiver programando:
+### 2. Agora sim, hora de programar!
 
-Fechou uma questão? Fez uma página nova de HTML ou CSS? Salve o arquivo e diga ao Git para acompanhar as mudanças:
+Fechou uma questão? Terminou o HTML ou CSS da Lista 4? Salve os arquivos e diga ao Git para empacotar suas mudanças:
 
 ```bash
 # Adiciona todos os arquivos modificados
 git add .
 
-# Salva uma "fotografia" do momento com uma mensagem do que você fez
+# Salva uma "fotografia" do momento com uma mensagem clara do que você fez
 git commit -m "Resolvendo os exercicios da lista 4"
 
 ```
 
-### 3. Entregando a atividade (Enviando para o SEU GitHub):
+### 3. Entregando a atividade (Enviando para o SEU GitHub)
 
-Quando terminar a aula ou a tarefa, envie o seu código resolvido para a **sua** cópia no GitHub (`origin`):
+Terminou a aula ou o exercício? Não vá embora sem mandar o código da sua máquina para o seu repositório na nuvem!
 
 ```bash
 git push origin main
 
 ```
 
+Pronto! Seu código está salvo no GitHub e quando você for para outro computador, é só repetir o processo a partir do Passo 1.
+
 ---
 
-## 🚨 Comandos Básicos de Sobrevivência
+## 🚨 Comandos Básicos de Resgate
 
-Esqueceu onde está ou o que foi alterado? Use esses comandos:
+Esqueceu onde está ou o que foi alterado? Use esses comandos para se localizar:
 
 * `git status` -> Mostra quais arquivos foram modificados e se há algo para commitar.
 * `git log` -> Mostra o histórico de todos os commits (versões salvas) que você já fez.
 
 **Boa atividade e bons códigos a todos! Qualquer dúvida, me chamem.**
-
-```
 
 ```
