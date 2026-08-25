@@ -47,9 +47,10 @@ Para as nossas aulas, vocês não vão modificar o meu repositório diretamente.
 
 Abra o terminal no seu computador, escolha a pasta onde quer salvar os projetos e digite o comando abaixo usando o link do **SEU** repositório:
 
-
+```bash
 git clone [https://github.com/SEU-USUARIO/exercicios-pw.git](https://github.com/SEU-USUARIO/exercicios-pw.git)
 
+```
 
 
 Entre na pasta que acabou de ser criada:
