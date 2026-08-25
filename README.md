@@ -48,7 +48,7 @@ Para as nossas aulas, vocês não vão modificar o meu repositório diretamente.
 Abra o terminal no seu computador, escolha a pasta onde quer salvar os projetos e digite o comando abaixo usando o link do **SEU** repositório:
 
 ```bash
-git clone [https://github.com/SEU-USUARIO/exercicios-pw.git](https://github.com/SEU-USUARIO/exercicios-pw.git)
+git clone https://github.com/SEU-USUARIO/exercicios-pw.git
 
 ```
 
@@ -67,7 +67,7 @@ cd exercicios-pw
 Agora precisamos avisar ao seu Git onde está o repositório original do professor para você receber as listas novas (lista-4, lista-5, etc.). No terminal, dentro da pasta do projeto, digite:
 
 ```bash
-git remote add upstream [https://github.com/profaledev/exercicios-pw.git](https://github.com/profaledev/exercicios-pw.git)
+git remote add upstream https://github.com/profaledev/exercicios-pw.git
 
 ```
 
