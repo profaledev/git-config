@@ -1,6 +1,6 @@
 # 🚀 Guia Definitivo: Git, GitHub e o Fluxo das Nossas Aulas
 
-Olá, turma da Etec! Tudo bem?
+Olá, turma, Tudo bem?
 
 Para que possamos organizar nossos projetos de Sistemas Web, HTML, CSS e JavaScript, vamos utilizar o **Git** e o **GitHub**. Este guia vai ensinar desde a instalação até a rotina correta para vocês entregarem as atividades sem dor de cabeça (o famoso fluxo de *Fork* e *Upstream*).
 
